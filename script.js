@@ -8,7 +8,7 @@ while(addingLines == 1) {
 	addingLines = 0;
 	
 	} else {
-		document.write("LINE " + line + ":" + code);
+		document.writeln("LINE " + line + ":" + code);
 		lines.push(code);
 	}
 }
@@ -17,9 +17,9 @@ function runCode() {
 	var _item = 0;
 	var _line = 0;
 	var addCode = true;
-	while(_line < lines.length()) {
+	while(_line < lines.length) {
 		var command = "";
-		while(_line < str.length()) {
+		while(_line < lines.length) {
 			var char = lines[_item].charAt(_line)
 			if(char =! "[") {
 				if(addCode) {

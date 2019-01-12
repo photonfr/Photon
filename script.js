@@ -14,17 +14,17 @@ while(addingLines == 1) {
 }
 
 function runCode() {
-	var _item = 0;
 	var _line = 0;
 	var addCode = true;
 	while(_line < lines.length) {
 		var command = "";
-		while(_line < lines.length) {
-			var char = lines[_item].charAt(_line)
+		var i = 0;
+		while(i < lines[_line].length) {
+			var char = lines[_line].charAt(_line);
 			if(char =! "[") {
 				if(addCode) {
-					command = command + char + ""
-					_item++;
+					command = command + char + "";
+					i++;
 				}
 			} else {
 				var addCode = false;
